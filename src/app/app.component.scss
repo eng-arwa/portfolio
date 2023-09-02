@@ -1,0 +1,100 @@
+:root{
+ --ebony-clay: #213439;
+--apple-green: #d3efe2;
+--bermuda: #64deaa;
+--nevada: #696e70;
+--opal: #abc5bb;
+--oslo-gray: #989c9e;
+--emerald: #48c992;
+--gray-chateau: #9da6ac;
+--como: #567c6c;
+
+--ebony-clay: #213439;
+--tara: #d4f1e3;
+--green-spring: #bec2bb;
+--red: #bd1313;
+
+}
+.card{
+    
+}
+
+.timeline{
+    .timeline-content{
+        &::before{
+            content: '';
+            width: 2px;
+            height: 100%;
+            background: #64deaa;
+            position: absolute;
+            left: 50%;
+            margin-left: -1px;
+            top: 0;
+
+            
+        }
+        .left,.right{
+            width: calc(50% - 25px);
+            margin-bottom: 40px;
+            position: relative;
+            &::before{
+                content: '';
+                width: 14px;
+                height: 14px;
+                background-color: white;
+                border-radius: 50%;
+                border: 3px solid #64deaa;
+                position: absolute;
+                top: 20px ;
+              
+            }
+
+        }
+        .right{
+            float: right;
+            &::before{
+
+                left: -32px;
+            }
+
+            .content{
+                &::before{
+                    content: '';
+                    top: 20px;
+                    left: -19px;
+                    position: absolute;
+                    height: 0;
+                    width: 0;
+                    border-color: transparent #9da6ac transparent transparent ;
+                    border-style: solid;
+                    border-width: 10px;
+                }
+
+            }
+           
+        }
+        .left{
+            float: left;
+            &::before{
+
+                right: -32px;
+            }
+            .content{
+                &::before{
+                    content: '';
+                    top: 20px;
+                    right: -19px;
+                    position: absolute;
+                    height: 0;
+                    width: 0;
+                    border-color: transparent  transparent transparent #9da6ac;
+                    border-style: solid;
+                    border-width: 10px;
+                }
+
+            }
+            
+            
+        }
+    }
+}
