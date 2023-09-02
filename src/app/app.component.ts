@@ -55,15 +55,16 @@ export class AppComponent {
     {name:'unimark agency website ',linkgit:'',linkwebsite:'https://eng-arwa.github.io/unimark-last-update/',img:'./assets/image/Unimark.jpg'},
     {name:'Elm company (Ajer) web Application ',linkgit:'',linkwebsite:'http://ajr.sm4ai.com/sign-in?redirectURL=%2Fajr%2Flist',img:'./assets/image/ajer.jpg'},
     {name:'Elm company (Tageem) web Application ',linkgit:'',linkwebsite:'https://elm.sm4ai.com/requests/previous',img:'./assets/image/Taqeem.jpg'},
+    {name:'Portfolio Website',linkgit:'https://github.com/eng-arwa/portfolio',linkwebsite:'https://eng-arwa.github.io/portfolio/',img:'./assets/image/portofolio.jpg'},
     {name:'E-Commerce web Project ',linkgit:'https://github.com/eng-arwa/E_Commerce',linkwebsite:'',img:'./assets/image/Market.jpg'},
     {name:'Tasks Magement  web Project ',linkgit:'https://github.com/eng-arwa/TasksMangement',linkwebsite:'',img:'./assets/image/Admin.jpg'},
-    {name:'MQ web Project ',linkgit:'',linkwebsite:'',img:'./assets/image/MQ.jpg'},
-    {name:'Restaurant website',linkgit:'',linkwebsite:'https://eng-arwa.github.io/Resturant-Website/',img:'./assets/image/Restaurant.jpg'},
+    {name:'MCQ web Project ',linkgit:'https://github.com/eng-arwa/MQC',linkwebsite:'',img:'./assets/image/MCQ.jpg'},
+    {name:'Restaurant website',linkgit:'https://github.com/eng-arwa/Resturant-Website',linkwebsite:'https://eng-arwa.github.io/Resturant-Website/',img:'./assets/image/Restaurant.jpg'},
 ]
 
   mobileproject = [
     {name:'Blood Bank',linkgit:'',linkwebsite:'',img:''},
-    {name:'E-Commerce',linkgit:'',linkwebsite:'',img:'./assets/image/e-comerce.png'},
+    {name:'E-Commerce',linkgit:'https://github.com/eng-arwa/offersCompanys',linkwebsite:'',img:'./assets/image/offers.png'},
     
   ]
   open() {

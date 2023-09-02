@@ -2,46 +2,47 @@
 
     <!-- header -->
     <header class="absolute bg-ebony-clay">
-        <nav class="text-white  fixed top-0 left-0 right-0  mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <nav class="text-white bg-black z-50 fixed top-0 left-0 right-0  mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div class="text-white flex lg:flex-1">
-            <a href="#" class="-m-1.5 p-1.5">
+            <a  href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
-              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+              <img class="h-8 w-auto" src="../assets/image/logo1.png" alt="">
             </a>
           </div>
-          <div class="flex lg:hidden">
-            <button id="open" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-              <span class="sr-only">Open main menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <div  class="flex lg:hidden">
+            <button (click)="open()"  id="open" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span  class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6  text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </button>
           </div>
           <div class="hidden lg:flex lg:gap-x-12">
             <div class="relative text-white">
-              <a type="button" class="flex items-center gap-x-1 text-sm  leading-6 text-white" aria-expanded="false">
-                Home
+              <a href="#about" class="text-sm  leading-6 text-white">
+                About
              
             </a>
       
              
             </div>
       
-            <a href="#" class="text-sm  leading-6 text-white">About me</a>
-            <a href="#" class="text-sm  leading-6 text-white">Skills</a>
-            <a href="#" class="text-sm  leading-6 text-white">Projects</a>
+            <a href="#skills" class="text-sm  leading-6 text-white">Skills</a>
+            <a href="#work Experience" class="text-sm  leading-6 text-white">WorkExprenices</a>
+            <a href="#projects" class="text-sm  leading-6 text-white">Projects</a>
+            <a href="#contact" class="text-sm  leading-6 text-white">contact</a>
           </div>
          
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
         <div class="lg:hidden" role="dialog" aria-modal="true">
           <!-- Background backdrop, show/hide based on slide-over state. -->
-          <div (click)="open()" class="fixed inset-0 z-50"></div>
+          <!-- <div  class="fixed inset-0 z-50"></div> -->
           <div *ngIf="mobilemenu" class=" fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div class="flex items-center justify-between">
+            <div class="flex items-center mt-8 justify-between">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                <img class="h-8 w-auto" src="../assets/image/logo.png" alt="">
               </a>
               <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" id="close" (click)="close()">
                 <span class="sr-only" >Close menu</span>
@@ -53,15 +54,16 @@
             <div class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
-                  <div class="-mx-3">
-                    <a type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base  leading-7 text-black hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
-                      about
+                  <div class="mx-4">
+                    <a (click)="close()" href="#about" class="-mx-3 font-bold block rounded-lg px-3 py-2 text-base  leading-7 text-black hover:bg-gray-50" >                   
+                         About
                      
                     </a>
                    
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base  leading-7 text-black hover:bg-gray-50">Expre</a>
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base  leading-7 text-black hover:bg-gray-50">Marketplace</a>
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base  leading-7 text-black hover:bg-gray-50">Company</a>
+                  <a href="#skills" (click)="close()" class="-mx-3 font-bold block rounded-lg px-3 py-2 text-base  leading-7 text-black hover:bg-gray-50">Skills</a>
+                  <a href="#work Experience" (click)="close()" class="-mx-3 font-bold block rounded-lg px-3 py-2 text-base  leading-7 text-black hover:bg-gray-50">Work Experience</a>
+                  <a href="#projects" (click)="close()" class="-mx-3 block font-bold rounded-lg px-3 py-2 text-base  leading-7 text-black hover:bg-gray-50">Projects</a>
+                  <a href="#contact" (click)="close()" class="-mx-3 block font-bold rounded-lg px-3 py-2 text-base  leading-7 text-black hover:bg-gray-50">Contact</a>
                 </div>
                 
               </div>
@@ -73,7 +75,7 @@
       
     <!-- end header -->
     <!-- about me -->
- <div class="w-full bg-black  min-h-screen ">
+ <div  id="about" class="pt-14 sm:pt-2 w-full bg-black  min-h-screen ">
     <div class="grid sm:grid-cols-3 grid-cols-1 items-center mx-auto  max-w-7xl justify-between">
         <div class="content px-8 py-14 sm:py-4 col-span-2  text-white flex justify-center">
            <div class="content w-9/12">
@@ -83,7 +85,7 @@
              Hi , I'm Arwa Ahmed I'm a designer and developer of websites and web applications using angular framework. I have Bachelor's degree in Information Technology and  one year’s experience in programming work. I am passionate about programming. I am interested in learning the required and modern technologies on an ongoing basis to keep pace with technical development.
             </p>
             <div class="info mt-4">
-              <p class="text-sm sm:text-md"><span class="inline-block w-20 font-bold text-emerald text-sm sm:text-md">Country</span>Yemen</p>
+              <p class="text-sm sm:text-md"><span class="inline-block w-20 font-bold text-emerald text-sm sm:text-md">Country</span>Yemen - sana'a</p>
             <p class="text-sm sm:text-md"><span class="inline-block w-20 font-bold text-emerald text-sm sm:text-md">Email</span>Arwaahmedhaider@gmail.com</p>
             <p class="text-sm sm:text-md"><span class="inline-block w-20 font-bold text-emerald text-sm sm:text-md">Phone</span>+967 771-297-549</p>
             </div>
@@ -94,7 +96,7 @@
                 <span class="material-symbols-outlined p-2">
                   download 
                   </span>download CV </a>
-                  <a href="" >
+                  <a href="https://github.com/eng-arwa/portfolio" >
                     <span class="w-9 h-9 mx-4 sm:w-14 s:mx-8 sm:h-14 rounded-full  flex items-center border-solid border-gray-chateau border-2 justify-center bg-black"><i class="fa-brands fa-github text-md sm:text-3xl text-gray-chateau"></i></span>
                   </a>
 
@@ -110,7 +112,7 @@
 
  <!-- skills -->
 
- <div  class="w-full bg-black ">
+ <div id="skills" class="w-full bg-black ">
   <div  class="bg-black mx-auto  max-w-7xl justify-between">
     <h1 class="text-center text-tara text-3xl font-bold pt-4 mb-8">Skills</h1>
     <owl-carousel-o [options]="customOptions">
@@ -135,7 +137,7 @@
 
 
     <!-- timelineworkexp -->
-    <div class="timeline pt-8 w-full py-8 bg-black">
+    <div id="work Experience" class="timeline pt-8 w-full py-8 bg-black">
       <h1 class="text-center text-tara text-3xl font-bold pt-4 mb-8">Work Experience</h1>
       <div class="container bg-black mx-auto  max-w-7xl justify-between">
       <div class="timeline-content relative overflow-hidden ">
@@ -200,7 +202,7 @@
     <!-- timelineworkexp -->
          <!-- projects -->
 
-         <div class="projects w-full bg-black ">
+         <div id="projects" class="projects w-full bg-black ">
           <div class="bg-black mx-auto  max-w-7xl justify-between">
             <div class="web">
               <h1 class=" text-center text-tara text-3xl font-bold pt-8 mb-8">Projects</h1>
@@ -209,12 +211,12 @@
                 <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
               
                   <div class="cardproject  p-8 rounded-lg  bg-oslo-gray text-ebony-clay" *ngFor="let project of webproject">
-                    <img [src]="project.img" class="w-full h-44" alt="">
-                    <h1>{{project.name}}</h1>
+                    <img [src]="project.img" class="w-11/12 m-auto rounded-md h-44" alt="">
+                    <h1 class="mt-2">{{project.name}}</h1>
   
                    <div class="flex justify-end items-end mt-4">
-                    <a [href]="project.linkgit" target="_blank" class="btn  px-4 py-2 rounded-lg text-center text-white bg-ebony-clay mx-2">source github</a>
-                    <a [href]="project.linkwebsite" target="_blank" class="btn px-4 py-2 rounded-lg text-center text-white bg-ebony-clay">view Website</a>
+                    <a  *ngIf="project.linkgit !== ''" [href]="project.linkgit" target="_blank" class="btn  px-4 py-2 rounded-lg text-center text-white bg-ebony-clay mx-2">view source </a>
+                    <a *ngIf="project.linkwebsite !== ''" [href]="project.linkwebsite" target="_blank" class="btn px-4 py-2 rounded-lg text-center text-white bg-ebony-clay">view Website</a>
                    </div>
                   </div>
                 </div>
@@ -224,12 +226,12 @@
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
               
                   <div class="cardproject  p-8 rounded-lg  bg-oslo-gray text-ebony-clay" *ngFor="let project of mobileproject">
-                    <img [src]="project.img" class="w-44 h-44" alt="">
-                    <h1>{{project.name}}</h1>
+                    <img [src]="project.img" class="w-11/12 rounded-sm m-auto h-44" alt="">
+                    <h1  class="mt-2">{{project.name}}</h1>
   
                    <div class="flex justify-end items-end mt-4">
-                    <a [href]="project.linkgit" target="_blank" class="btn  px-4 py-2 rounded-lg text-center text-white bg-ebony-clay mx-2">source github</a>
-                    <a [href]="project.linkwebsite" target="_blank" class="btn px-4 py-2 rounded-lg text-center text-white bg-ebony-clay">view Website</a>
+                    <a [href]="project.linkgit" target="_blank" class="btn  px-4 py-2 rounded-lg text-center text-white bg-ebony-clay mx-2">view source </a>
+                    <!-- <a [href]="project.linkwebsite" target="_blank" class="btn px-4 py-2 rounded-lg text-center text-white bg-ebony-clay">view Website</a> -->
                    </div>
                   </div>
                 </div>
@@ -245,7 +247,7 @@
         <!--end projects -->
 
     <!-- contact -->
-    <div class="bg-black w-full pt-8 pb-14">
+    <div id="contact" class="bg-black w-full pt-14 pb-14">
       <div class="contact">
         <h1 class="text-center text-tara text-3xl font-bold text-center text-tara text-3xl font-bold ">Contact Me</h1>
 
@@ -279,7 +281,7 @@
     <footer>
       <div class="w-full  bg-ebony-clay py-4 flex justify-center">
        
-        <p class="text-white">Copyright @ 2023 By Arwa Ahmed. Front-End Developer</p>
+        <p class="text-white">Copyright @ 2023 By Arwa Ahmed.</p>
   
         
       </div>
