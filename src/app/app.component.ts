@@ -36,17 +36,17 @@ export class AppComponent {
   }
    
     slides = [
-      {id: '1', img: "../assets/image/html.png",name:'HTML'},
-      {id: '2', img: "../assets/image/css.png",name:'CSS'},
-      {id: '3', img: "../assets/image/sass.png",name:'SASS'},
-      {id: '4', img: "../assets/image/js.png",name:'Java Script'},
-      {id: '5', img: "../assets/image/ts.png",name:'Type SCript'},
-      {id: '6', img: "../assets/image/angular.png",name:'Angular Framework'},
-      {id: '7', img: "../assets/image/ionic.png",name:'Ionic Framework'},
-      {id: '8', img: "../assets/image/material.png",name:'Angular Material Components'},
-      {id: '9', img: "../assets/image/pwa.png",name:'Progressive Web App'},
-      {id: '10', img: "../assets/image/firebase.png",name:'Firebase Database'},
-      {id: '10', img: "../assets/image/restapi.png",name:'REAST Api'}
+      {id: '1', img: "./assets/image/html.png",name:'HTML'},
+      {id: '2', img: "./assets/image/css.png",name:'CSS'},
+      {id: '3', img: "./assets/image/sass.png",name:'SASS'},
+      {id: '4', img: "./assets/image/js.png",name:'Java Script'},
+      {id: '5', img: "./assets/image/ts.png",name:'Type SCript'},
+      {id: '6', img: "./assets/image/angular.png",name:'Angular Framework'},
+      {id: '7', img: "./assets/image/ionic.png",name:'Ionic Framework'},
+      {id: '8', img: "./assets/image/material.png",name:'Angular Material Components'},
+      {id: '9', img: "./assets/image/pwa.png",name:'Progressive Web App'},
+      {id: '10', img: "./assets/image/firebase.png",name:'Firebase Database'},
+      {id: '10', img: "./assets/image/restapi.png",name:'REAST Api'}
     ];
 
   webproject = [
